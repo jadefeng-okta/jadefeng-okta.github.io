@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars Intro</title>
+
+	<style type="text/css">
+		body {
+		  width: 100%;
+		  height: 100%;
+		  background: #000;
+		  overflow: hidden;
+		}
+
+		.fade {
+		  position: relative;
+		  width: 100%;
+		  min-height: 60vh;
+		  top: -25px;
+		  background-image: linear-gradient(0deg, transparent, black 75%);
+		  z-index: 1;
+		}
+
+		.star-wars {
+		  display: flex;
+		  justify-content: center;
+		  position: relative;
+		  height: 800px;
+		  color: #feda4a;
+		  font-family: 'Pathway Gothic One', sans-serif;
+		  font-size: 500%;
+		  font-weight: 600;
+		  letter-spacing: 6px;
+		  line-height: 150%;
+		  perspective: 400px;
+		  text-align: justify;
+		}
+
+		.crawl {
+		  position: relative;
+		  top: 99999px;
+		  transform-origin: 50% 100%;
+		  animation: crawl 30s linear;
+		}
+
+		.crawl > .title {
+		  font-size: 90%;
+		  text-align: center;
+		}
+
+		.crawl > .title h1 {
+		  margin: 0 0 100px;
+		  text-transform: uppercase;
+		}
+
+		@keyframes crawl {
+			0% {
+		    top: -100px;
+		    transform: rotateX(20deg)  translateZ(0);
+		  }
+			100% { 
+		    top: -6000px;
+		    transform: rotateX(25deg) translateZ(-2500px);
+		  }
+		}
+
+
+
+.home-button {
+	position:absolute;
+	bottom:0;
+	color:navy;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="fade"></div>
+
+<section class="star-wars">
+  <div class="crawl">
+    <div class="title">
+  <p>Episode MAY 2018</p>
+  <h1>CUSTOM URL DOMAINS, SIGN-IN PAGE, ERROR PAGES</h1>
+</div>
+
+	<p>It is a period of more and more customers coming to the Okta side of The Force, and want to customize their end-user experience. The battle to delight customers and cement Okta's market leadership is progressing, and the Okta's Empire is ahead of the competition.</p>
+
+	<h2>Credits</h2>      
+
+	<p>Hor-Kan Chan (eng manager)<br>
+	Santhosh Krishnan (eng)<br>
+	Nikhil Venkatraman (eng)<br>
+	Samer Fanek (eng)<br>
+	Manuel Tanzi (eng)<br>
+	Priya Kathirvel (QA)<br>
+	Joël Franusic (TMM)<br>
+	Lily Hsiao (Director Eng)<br>
+	Matt Loughran (tech writing)<br>
+	John Intrater (design)<br>
+	Chris Barbara (eng)<br>
+	Rocco Muscaritolo (eng)<br>
+	Trevor Thompson (architect)<br>
+	John Gronberg (PM)<br>
+	Tom Abbott (PM DevEx)<br>
+	Nate Barbettini (PM DevEx)<br>
+	Ahmed Al-Bahar (PM)<br>
+	Reman Child (DevEx architect)<br>
+	Tom Britton (program manager)<br>
+	Jing Hu (eng) <br>
+	Frank Montanaro (eng)<br>
+	Eric Carroll (eng)<br>
+	Mauricio Silva (eng)<br>
+	Daniel Lu (PMM)<br>
+	Jade Feng (PM)</p>
+
+
+</section>
+
+<a href="index.html"><div class="home-button">Go to HQ</div></a>
+
+
+</body>
+</html>
